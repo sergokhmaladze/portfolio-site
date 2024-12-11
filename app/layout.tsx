@@ -1,8 +1,7 @@
 'use client';
-import Link from "next/link";
 import './reset.css';
 import Footer from "./components/footer";
-// import ButtonForSidebar from "./components/sidebarBu/button";
+import NavBar from './components/navbar';
 
 export default function RootLayout({
   children,
@@ -12,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        {/* <ButtonForSidebar></ButtonForSidebar> */}
+        <NavBar></NavBar>
         {children}
         <Footer></Footer>
       </body>
