@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import './reset.css';
-// import Footer from "./sidebar/footer/page";
+import Footer from "./components/footer";
 // import ButtonForSidebar from "./components/sidebarBu/button";
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
       <body >
         {/* <ButtonForSidebar></ButtonForSidebar> */}
         {children}
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </body>
     </html>
   );
