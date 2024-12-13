@@ -8,8 +8,9 @@ function NavBar(): React.JSX.Element{
   return(
     <header className={styles.container}>
       <div className={styles.container__menu}>
-        <Link href="/" className={styles.container__logo}>
+        <Link href="/">
           <Image 
+            className={styles.container__logo}
             src="/me.jpg"
             alt="My logo" 
             width={40}      

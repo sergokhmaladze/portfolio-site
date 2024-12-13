@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.container__menu{
+  display: flex;
+  align-items: center;
+}
+
+.container__logo{
+  border-radius: 20px;
+}
+
+.container__name{
+  margin-left: 15px;
+}
+
