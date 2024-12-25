@@ -4,6 +4,7 @@
   padding: 10px;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #ffffff;
 }
 
@@ -19,4 +20,3 @@
 .container__name{
   margin-left: 15px;
 }
-

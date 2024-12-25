@@ -1,0 +1,59 @@
+.menu__overlay.open {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.3s;
+}
+
+.menu__item{
+  display: flex;
+  left: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.close__button, .open__button {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  justify-items: center;
+  padding-right: 15px;
+}
+
+.menu__overlay{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  align-items:flex-end;
+  flex-direction: column;
+  list-style: none;
+  background-color: #ffffff;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.3s;
+}
+
+.menu__overlay li{
+  width: 100%;
+  border-top: 2px solid #eee;
+  text-align: right;
+}
+
+.navbar__item{
+  text-decoration: none;
+  color:black;
+  padding-right: 20px;
+  line-height: 2.5em;
+}
+
+.navbar__item:hover{
+  color: rgb(225, 19, 19);
+}
+
+
+
+
+
+
