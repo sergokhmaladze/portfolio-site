@@ -16,7 +16,7 @@ function NavBar(): React.JSX.Element{
   const closeMenu = () => {
     setMenuOpen(false);
   };
-
+  
   return(
     <header className={styles.container}>
       <div className={styles.container__menu}>
