@@ -25,10 +25,9 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, closeMenu, toggleMenu }
     };
   }, [closeMenu]);
 
-  
   return (
     <div ref={menuRef} className={styles.menu__item}>
-     <div onClick={toggleMenu}>
+     <div className={styles.burgerMenu__button} onClick={toggleMenu}>
         {isOpen ? (
             <span className={styles.close__button}>✖</span>
         ) : (
@@ -41,7 +40,6 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, closeMenu, toggleMenu }
         <li><Link href="/contact" onClick={closeMenu} className={styles.navbar__item}>Contact</Link></li>
       </ul>
     </div>
-
   );
 };
 

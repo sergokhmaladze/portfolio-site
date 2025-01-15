@@ -29,7 +29,7 @@ function NavBar(): React.JSX.Element{
             height={40}
           />
         </Link>
-        <p className={styles.container__name}>Sergo Kmaladze</p>
+        <p className={styles.container__name} >Sergo Kmaladze</p>
       </div>
 
       <BurgerMenu isOpen={isMenuOpen} closeMenu={closeMenu} toggleMenu={toggleMenu} />
