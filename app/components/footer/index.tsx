@@ -5,7 +5,6 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import styles from './styles.module.css';
 
-
 export default function Footer(): React.JSX.Element{
     let socialStyle = {
         width: '30px',
@@ -14,7 +13,6 @@ export default function Footer(): React.JSX.Element{
         color: 'blue'
     }
     return (
-        
        <div className={styles.container}>
         <div className={styles.socialCont}>
           <h3 className={styles.socialsHeader}>სოციალური ქსელები</h3>
@@ -40,5 +38,4 @@ export default function Footer(): React.JSX.Element{
         </div>
        </div>
     )
-
 }

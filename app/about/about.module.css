@@ -29,13 +29,12 @@
 }
 
 .skill{
-  margin: 20px 0;
+  margin: 20px;
   width: 100%;
   display: grid;
   gap: 5px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 2fr 2fr 2fr;
   padding: 5px;
-
 }
 
 .skillList{
@@ -53,9 +52,9 @@
 
 @media (min-width: 768px){
 .skillList{
-  height: 70px;
-  font-size: 25px;
-  width: 70%;
+  height: 60px;
+  font-size: 20px;
+  width: 80%;
   margin: 20px;
-}
+ }
 }
