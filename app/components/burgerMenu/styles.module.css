@@ -73,9 +73,8 @@
   }
   
   .menu__overlay li{
-    all: unset;
-    margin-right: 20px;
-    align-items: center;
+    all: unset; 
+    margin: 5px 20px 0px 0px;
   }
 }
 
