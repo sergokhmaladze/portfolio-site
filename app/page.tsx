@@ -22,6 +22,7 @@ export default function Home(): React.JSX.Element {
             <Link href={`/projects/${project.slug}`}>
               {project.title}
             </Link>
+            <img src={project.image} width={250} height={250}/>
           </li>
         ))}
       </ul>
