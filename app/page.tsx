@@ -14,22 +14,38 @@ export default function Home(): React.JSX.Element {
            რაც იწვევს მთლიანი პროდუქტის წარმატებას</p>
       </div>
 
-      <div>
-      <h1>My Projects</h1>
-      <ul>
+      <div className={styles.container__projects}>
+        <h1 className={styles.container__title}>My Projects</h1>
+        <div className={styles.projects__grid}>
         {projects.map((project) => (
-          <li key={project.id}>
-            <Link href={`/projects/${project.slug}`}>
-              {project.title}
-            </Link>
-            <img src={project.image} width={250} height={250}/>
-          </li>
+          <div className={styles.project} key={project.id}>
+            <div className={styles.project__content}>
+              <Link className={styles.project__link} href={`/projects/${project.slug}` } >
+                {project.title}
+              </Link>
+              <img className={styles.project__image} src={project.image} width={250} />
+            </div>
+          </div>
         ))}
-      </ul>
-    </div>
+        </div>
+      </div>
     </main>
   );
 }
+
+{/* <div>
+  <h1>My Projects</h1>
+    <ul>
+    {projects.map((project) => (
+      <li key={project.id}>
+        <Link href={`/projects/${project.slug}`}>
+          {project.title}
+        </Link>
+        <img src={project.image} width={250} height={250}/>
+      </li>
+    ))}
+    </ul>
+</div> */}
 
 
 
