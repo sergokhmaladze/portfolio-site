@@ -1,6 +1,6 @@
 .container{
   width: 100%;
-  min-height: calc(100vh - 50px);
+  padding-bottom: 40px;
 }
 
 .whoAmIheader{
@@ -80,7 +80,6 @@
   .project {
     padding: 15px;
   }
-
 }
 
 @media (max-width: 600px) {

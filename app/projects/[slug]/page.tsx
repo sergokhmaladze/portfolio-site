@@ -3,6 +3,7 @@ import React from 'react';
 import projects from '../../../data/projects.json';
 import { useEffect, useState } from 'react';
 import { useParams } from "next/navigation";
+import styles from '@/app/slugpage.module.css'
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -20,13 +21,13 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div>
-      <h1>{project.title}</h1>
-      <p>
+    <div className={styles.container}>
+      <h1 className={styles.container__title}>{project.title}</h1>
+      <div className={styles.container__content}>
         <a href={project.link} target='_blank'>
-        <img src={project.image} alt={project.title} width={250} height={250}/>
+        <img className={styles.container__image} src={project.image} alt={project.title} width={350}/>
         </a>
-        </p>
+      </div>
     </div>
   );
 }

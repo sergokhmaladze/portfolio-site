@@ -13,7 +13,7 @@ export default function Home(): React.JSX.Element {
            რომელიც აკეთებს და მართავს ვებსაიტებს და ვებ აპლიკაციებს, 
            რაც იწვევს მთლიანი პროდუქტის წარმატებას</p>
       </div>
-
+      
       <div className={styles.container__projects}>
         <h1 className={styles.container__title}>My Projects</h1>
         <div className={styles.projects__grid}>
