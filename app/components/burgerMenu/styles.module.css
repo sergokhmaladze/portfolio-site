@@ -1,7 +1,7 @@
 .menu__overlay.open {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .menu__item{
@@ -12,7 +12,6 @@
 }
 
 .close__button, .open__button {
-  position: fixed;
   top: 10px;
   right: 0;
   font-size: 1.5rem;
@@ -22,17 +21,18 @@
 }
 
 .menu__overlay{
+  opacity: 0;
   display: flex;
   position: absolute;
   width: 100%;
-  top: 60px;
   left: 0;
   align-items:flex-end;
   flex-direction: column;
   list-style: none;
   background-color: #ffffff;
-  visibility: visible;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  top: 60px;
 }
 
 .menu__overlay li{
@@ -59,13 +59,10 @@
     display: none;
   }
 
-  .menu__overlay.open{
-    all: unset;
-    transition: opacity 0.3s ease;
+  .menu__overlay{
     display: flex;
-    position: fixed;
-    right: 20px;
     font-size: 1.2rem;
+    transition: none;
   }
 
   .menu__overlay, .navbar__item{

@@ -33,7 +33,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, closeMenu, toggleMenu }
             <span className={styles.open__button}>☰</span>
         )}
       </div>
-      <ul className={`${styles.menu__overlay} ${!isOpen ? styles.open : ""}`}>
+      <ul className={`${styles.menu__overlay} ${isOpen ? styles.open : ""}`}>
         <li><Link href="/" onClick={closeMenu} className={styles.navbar__item}>Home</Link></li>
         <li><Link href="/about" onClick={closeMenu} className={styles.navbar__item}>About</Link></li>
         <li><Link href="/contact" onClick={closeMenu} className={styles.navbar__item}>Contact</Link></li>
