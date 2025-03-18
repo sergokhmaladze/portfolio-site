@@ -33,19 +33,7 @@ export default function Home(): React.JSX.Element {
   );
 }
 
-{/* <div>
-  <h1>My Projects</h1>
-    <ul>
-    {projects.map((project) => (
-      <li key={project.id}>
-        <Link href={`/projects/${project.slug}`}>
-          {project.title}
-        </Link>
-        <img src={project.image} width={250} height={250}/>
-      </li>
-    ))}
-    </ul>
-</div> */}
+
 
 
 
