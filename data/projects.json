@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Tbc Academy",
+    "slug": "Tbc-Academy",
+    "image": "/tbcacademy.jpg",
+    "link": "https://github.com/sergokhmaladze/tbc-academy"
+  },
+  {
+    "id": 2,
+    "title": "Course Goal Project",
+    "slug": "Course-Goal-Project",
+    "image": "/course-goal-project.png",
+    "link": "https://github.com/sergokhmaladze/course-goal-project"
+  },
+  {
+    "id": 3,
+    "title": "Adding User",
+    "slug": "Adding-User",
+    "image": "/add-user.png",
+    "link": "https://github.com/sergokhmaladze/adding-user"
+  },
+  {
+    "id": 4,
+    "title": "Typical Page",
+    "slug": "Typical-Page",
+    "image": "/typical_page.png",
+    "link": "https://github.com/sergokhmaladze/typical-page"
+  },
+  {
+    "id": 5,
+    "title": "Expenses",
+    "slug": "Expenses",
+    "image": "/expenses.png",
+    "link": "https://github.com/sergokhmaladze/Expenses"
+  }
+]

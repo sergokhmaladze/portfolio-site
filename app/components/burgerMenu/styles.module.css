@@ -1,0 +1,85 @@
+.menu__overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.menu__item{
+  display: flex;
+  left: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.close__button, .open__button {
+  top: 10px;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  justify-items: center;
+  padding-right: 15px;
+}
+
+.menu__overlay{
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  align-items:flex-end;
+  flex-direction: column;
+  list-style: none;
+  background-color: #ffffff;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  top: 60px;
+}
+
+.menu__overlay li{
+  width: 100%;
+  border-top: 2px solid #eee;
+  text-align: right;
+  
+}
+
+.navbar__item{
+  text-decoration: none;
+  color:black;
+  padding-right: 20px;
+  line-height: 2.5em;
+}
+
+.navbar__item:hover{
+  color: rgb(225, 19, 19);
+}
+
+@media (min-width: 769px){
+  .close__button, .open__button{
+    all: unset;
+    display: none;
+  }
+
+  .menu__overlay{
+    display: flex;
+    font-size: 1.2rem;
+    transition: none;
+  }
+
+  .menu__overlay, .navbar__item{
+    all: unset;
+  }
+  
+  .menu__overlay li{
+    all: unset; 
+    margin: 5px 20px 0px 0px;
+  }
+}
+
+
+
+
+  
+
+
+
+
